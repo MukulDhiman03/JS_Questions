@@ -23,4 +23,6 @@
 18. Write a javascript function that sorts an array of numbers in descending order.
 19. Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method.
 20. Implement a javascript function that flattens a nested array into a single-dimensional array.
-"# JS_Questions" 
+21. Implement a javascript function that flattens a nested array into a single-dimensional array up to depth n.
+
+"# JS_Questions"
