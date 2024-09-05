@@ -24,5 +24,6 @@
 19. Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method.
 20. Implement a javascript function that flattens a nested array into a single-dimensional array.
 21. Implement a javascript function that flattens a nested array into a single-dimensional array up to depth n.
+22. Swap without using 3rd vairable.
 
 "# JS_Questions"

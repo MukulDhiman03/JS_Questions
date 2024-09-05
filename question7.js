@@ -14,7 +14,6 @@ function mergerArray(arr1, arr2) {
     }
   }
   // Add remaining elements of arr1, if any
-
   while (i < arr1.length) {
     newArr.push(arr1[i++]);
   }

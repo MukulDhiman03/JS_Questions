@@ -13,10 +13,19 @@ console.log("words".split(" "));
 ["my","name","is","mukul"]
 */
 
+// const checkPal = (str) => {
+//   const str2 = str.split("").reverse().join("");
+//   console.log(str2);
+// };
+
 const checkPal = (str) => {
-  const str2 = str.split("").reverse().join("");
-  console.log(str2);
+  let str1 = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    str1 += str[i];
+  }
+  return str1 === str;
 };
 
-let str = "maamo";
-checkPal(str);
+let str = "maam";
+console.log(checkPal(str));

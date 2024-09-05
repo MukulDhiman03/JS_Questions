@@ -5,6 +5,11 @@ Input:
 "The quick brown fox jumps over the lazy dog"
 Output:
 "jumps"
+
+split(' ')     Splits the string into an array of words based on spaces.
+
+split('')      Splits the string into an array of individual characters.
+
 */
 
 const longestWord = (sentence) => {
