@@ -5,7 +5,7 @@ next() -> it returns an object with two properties and helps in traversing the a
     1) value
     2) done
 
-
+Iterators are used when we want to build a custom iteration.
 
 */
 function fruitIterator(arr) {
