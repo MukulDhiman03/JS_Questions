@@ -8,7 +8,7 @@ const throttle = (func, limit) => {
     if (flag) {
       func();
       flag = false;
-      setTimeout(() => {
+      setTimeout(() => { 
         flag = true;
       }, limit);
     }

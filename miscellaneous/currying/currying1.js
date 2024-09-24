@@ -1,28 +1,21 @@
-// const add = (a) => {
-//   return (b) => {
-//     if (b) return add(a + b);
-//     return a;
-//   };
-// };
+// non currying function
 
-let add = (a) => (b) => b ? add(a + b) : a;
+/*
+function sum(x, y, z) {
+  return x + y + z;
+}
+console.log(sum(1, 2, 3));
+*/
 
-console.log(add(2)(3)(4)(5)(9)(1)());
-
-let obj = {
-  total: 0,
-  add: function (a) {
-    this.total += a;
-    return this;
-  },
-  multiply: function (b) {
-    this.total *= b;
-    return this;
-  },
-  sub: function (c) {
-    this.total -= c;
-    return this;
-  },
-};
-const result = obj.add(10).multiply(5).sub(2);
-console.log(result.total);
+// currying
+function sum(x) {
+  return function (y) {
+    return function (z) {
+      return x + y + z;
+    };
+  };
+}
+// console.log(sum(1)(2)(3));
+let res = sum(1);
+let res1 = res(2);
+console.log(res1(2));
