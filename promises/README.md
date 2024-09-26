@@ -1,4 +1,4 @@
-Callback Hell(Pyramid of doom)->when we have nested callbacks, it make diffucult to debug the code, it will be a wired looking structure.
+Callback Hell(Pyramid of doom)->when we have nested callbacks, it make difficult to debug the code, it will be a wired looking structure.
 
 The solution of callback hell is promises.
 
