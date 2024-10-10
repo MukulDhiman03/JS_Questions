@@ -2,18 +2,14 @@
 
 /*
 With help of reduce function
-
 function findMaxInArray(arr) {
   if (arr.length === 0) throw new Error('Array is empty');
-
   return arr.reduce((max, current) => {
     return current > max ? current : max;
   }, arr[0]);
 }
-
 const numbers = [5, 3, 8, 1, 2, 7];
 console.log(findMaxInArray(numbers)); // Output: 8
-
 */
 
 function maxInArray(arr) {

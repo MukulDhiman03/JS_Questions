@@ -9,7 +9,7 @@
 
 /*
 2) Using filter() and indexOf()
-indexOf() -> arr.indexOf(value): This returns the index of the first occurrence of value in the array.
+    indexOf() -> arr.indexOf(value): This returns the index of the first occurrence of value in the array.
 */
 
 function removeDuplicates(arr) {

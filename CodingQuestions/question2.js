@@ -7,10 +7,11 @@ split('')      Splits the string into an array of individual characters.
 
 
 console.log("My name is mukul".split(""));
- ["w", "o", "r", "d"];
+["w", "o", "r", "d"];
 
 console.log("words".split(" "));
 ["my","name","is","mukul"]
+
 */
 
 // const checkPal = (str) => {
@@ -20,7 +21,6 @@ console.log("words".split(" "));
 
 const checkPal = (str) => {
   let str1 = "";
-
   for (let i = str.length - 1; i >= 0; i--) {
     str1 += str[i];
   }
