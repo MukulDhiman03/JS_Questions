@@ -1,3 +1,5 @@
+// time complexity O(nlogn) , space complexity O(n)but does not takes an extra space
+
 let arr = [4, 5, 6, 7, 1, 2, 8, 3, 0];
 function quickSort(arr, l, h) {
   if (l < h) {
