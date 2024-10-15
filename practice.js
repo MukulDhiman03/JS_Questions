@@ -1,31 +1,14 @@
-let arr = [4, 5, 6, 7, 1, 2, 8, 3, 0];
-function quickSort(arr, l, h) {
-  if (l < h) {
-    let partitionIndex = partition(arr, l, h);
-    quickSort(arr, l, partitionIndex - 1);
-    quickSort(arr, partitionIndex + 1, h);
-  }
-}
-
-function partition(arr, l, h) {
-  let pivort = arr[l];
-  let i = 0;
-  let j = h;
-
-  while (i < j) {
-    while (arr[i] <= pivort) {
-      i++;
-    }
-    while (arr[j] > pivort) {
-      j--;
-    }
-    if (i < j) {
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+function flatArray(arr, n) {
+  let resArr = [];
+  if (n === 0) return arr;
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      resArr.push(...flatArray(arr[i], n - 1));
+    } else {
+      resArr.push(arr[i]);
     }
   }
-  [arr[l], arr[j]] = [arr[j], arr[l]];
-  return j;
+  return resArr;
 }
-
-quickSort(arr, 0, arr.length - 1);
-console.log(arr);
+console.log(flatArray([1, 2, [3, 4], [5, 6, 7]], 0));
+console.log(flatArray([1, 2, [3, 4], [5, 6, 7]], 1));

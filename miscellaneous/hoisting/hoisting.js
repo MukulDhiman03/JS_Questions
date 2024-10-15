@@ -1,4 +1,4 @@
-//Hoisting : during creation phase js engine moves function declarations and variable to top of the code
+//Hoisting : during creation phase js engine moves function declarations and variable to top of their containing scope.
 
 /*
 
@@ -15,22 +15,23 @@ This if statement checks whether a is truthy. In JavaScript, certain values are 
 
 false
 0
-"" (empty string)
+""(empty string)
 null
 undefined
 NaN
-Since a is 0 (which is a falsy value), the if condition evaluates to false.
-
-
+Since a is 0 (which is a falsy value),the if condition evaluates to false.
 
 This if statement checks whether the string if(" ") (a string with a single space character) is truthy. In JavaScript, non-empty strings (even those containing only spaces) are considered truthy.
+
+
 */
 
 // In JavaScript, function declarations have higher precedence over variable declarations (var) when it comes to hoisting.
 function test() {
   return abc;
-  function abc() {}
   var abc = 5;
+
+  function abc() {}
 }
 
 console.log(typeof test());
