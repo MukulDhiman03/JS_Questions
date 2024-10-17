@@ -1,4 +1,4 @@
-# Top javascript questions asked in interview
+# Top javascript questions asked for interview
 
 1. Program to find longest word in a given sentence ?
 2. How to check whether a string is palindrome or not ?
