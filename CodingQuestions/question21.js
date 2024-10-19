@@ -6,7 +6,7 @@ var flat = function (arr, n) {
   if (n === 0) return arr;
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
-      flatArray.push(...flat(arr[i], n - 1));
+      flatArray = flatArray.concat(flat(arr[i], n - 1));
     } else {
       flatArray.push(arr[i]);
     }
