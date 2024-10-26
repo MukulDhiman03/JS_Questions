@@ -1,17 +1,12 @@
-function flatArray(arr, n) {
-  let resArr = [];
-  if (n === 0) return arr;
-  for (let i = 0; i < arr.length; i++) {
-    if (Array.isArray(arr[i])) {
-      resArr = resArr.concat(flatArray(arr[i], n - 1));
-    } else {
-      resArr.push(arr[i]);
+var findKthLargest = function (nums, k) {
+  nums = nums.sort((a, b) => a - b);
+  let largest = nums[nums.length - 1];
+  for (let i = nums.length - 1; i >= 0; i--) {
+    if (largest >= nums[i] && k != 0) {
+      k--;
+      largest = nums[i];
     }
   }
-  return resArr;
-}
-console.log(flatArray([1, 2, [3, 4], [5, 6, 7]], 1));
-console.log(flatArray([1, 2, [3, 4], [5, 6, 7]], 1));
-
-// [1, 2, [3, 4], [5, 6, 7]]
-// [1, 2, 3, 4, 5, 6, 7]
+  return largest;
+};
+findKthLargest()

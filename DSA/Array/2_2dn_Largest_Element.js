@@ -26,22 +26,22 @@ Better
     T-> O(n)
 
     var findKthLargest = function(nums, k) {
-    let largest=nums[0];
-    for(let i=0 ; i<nums.length ; i++)
-        {
-            if(largest<nums[i]){
-                largest=nums[i]
-            }
-        }
-    let secondLargest=nums[0];
-    for(let i=0 ; i<nums.length ; i++)
-        {
-            if(nums[i]>secondLargest && nums[i]!=largest)
+        let largest=nums[0];
+        for(let i=0 ; i<nums.length ; i++)
             {
-                secondLargest=nums[i]
+                if(largest<nums[i]){
+                    largest=nums[i]
+                }
             }
-        }
-    return secondLargest;
+        let secondLargest=nums[0];
+        for(let i=0 ; i<nums.length ; i++)
+            {
+                if(nums[i]>secondLargest && nums[i]!=largest)
+                {
+                    secondLargest=nums[i]
+                }
+            }
+        return secondLargest;
     };
 
 

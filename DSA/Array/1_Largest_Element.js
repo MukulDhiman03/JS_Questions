@@ -1,5 +1,4 @@
 /*
-
 Brute
 1) sort the array in ascending order than return the last element
     T-> O(nlogn)
@@ -14,5 +13,4 @@ Optimized
     return the largest
     T-> O(n)    
     S-> O(1)
-
 */
