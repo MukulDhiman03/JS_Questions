@@ -10,4 +10,4 @@ function reverseWords(sentense) {
 }
 
 console.log(reverseWords("My name is john doe"));
-// ["My", "name", "is", "John", "Doe"];
+
