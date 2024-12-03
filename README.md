@@ -1,3 +1,5 @@
+O(1) > O(log n) > O(n) > O(n log n) > O(n^2) > O(2^n) > O(n!)
+
 # Top javascript questions asked for interview
 
 1. Program to find longest word in a given sentence ?
