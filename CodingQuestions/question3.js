@@ -5,6 +5,10 @@
 
  A Set is a collection of unique values.
             new Set(arr)
+
+const arr = [1, 2, 3, 1, 2, 3];
+const newArr = new Set(arr);
+           
 */
 
 /*
