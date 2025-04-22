@@ -2,6 +2,18 @@ O(1) > O(log n) > O(n) > O(n log n) > O(n^2) > O(2^n) > O(n!)
 
 # Top javascript questions asked for interview
 
+Pollyfills
+Higher Order Functions
+Promises
+Callback Hell
+Async and await
+Event Loop
+Scop chain
+Closures
+JS engine
+
+
+
 1. Program to find longest word in a given sentence ?
 2. How to check whether a string is palindrome or not ?
 3. Write a program to remove duplicates from an array ?
